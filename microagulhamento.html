@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/style.css" type="text/css">
+  
+    <title>Innovare</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/product/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@900&display=swap');
+
+      body {
+        font-family: 'Poppins';
+      }
+
+
+     
+     *{
+       
+       margin: 0;
+       padding: 0;
+     }
+
+     
+     nav{
+        transition: 0.4s;        
+      }
+
+      nav-cta:hover{
+        background-color: #d3d3d3;
+        
+      }
+
+      .scrolling-active{
+        background-color: #fff;
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1) ;
+        
+      }
+
+      ul{
+        margin-right: 4rem;
+      }
+
+      .navbar-brand{
+        margin-left: 2rem;
+      }
+      
+      
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+     
+
+.sectionprincipal {
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+ 
+
+}
+
+.hed {
+ 
+  height: 100vh;
+}
+
+.overlay {
+  background-image: linear-gradient(to right, rgba(75, 255, 237, 10), rgba(0, 233, 213, .9));
+}
+
+.cardgreens{
+  height: 180px; /* elemento container .cardverde em posição full screen*/
+  margin-top: 18px;
+}
+
+#imgwomann {
+position: absolute;
+ margin-left: -2%;
+margin-top: 122px;
+width: 50%;
+}
+
+@media (max-width: 576px) {
+  #imgwomann { /* toda parte verde do elemento container*/
+   margin-top: -540px;
+   width: 100%;
+   
+  }
+}
+
+
+@media (max-width: 576px) {
+  .containerheight { /* toda parte verde do elemento container*/
+    height: 204vh;
+  }
+}
+
+
+
+.containerinner {
+margin-top: 5rem;
+margin-left: 7rem;                      /* define o padrao dos elementos txt btn dentro do container /fullscren*/
+
+}
+
+@media (max-width: 576px) {
+  .containerinner {                         /*define o padrao dos elementos txt, btn... dentro do container principal /mobile */    
+    /*margin-left: 0;*/
+  }
+}
+
+@media (max-width: 576px) {
+  .cardverde {                             /* cardverde com infos */
+    background-color: #00d3da;
+    margin-top: 442px;
+    width: 100%;
+    height: 100%;
+    margin-left: -120px;
+  }
+}
+
+
+
+
+
+.btn {
+  border: 4px solid white ;
+  border-radius: 25px;
+  background-color: rgb(217, 254, 255);
+  color: rgb(85, 85, 85);
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+nav{
+        transition: 0.4s;
+      }
+
+      nav-cta:hover{
+        background-color: #d3d3d3;
+        
+      }
+
+      .scrolling-active{
+        background-color: #fff;
+        box-shadow: 0 3px 1rem rgba(0,0,0,.1) ;
+        
+      }
+
+      nav:hover{
+
+background-color: white;
+}
+
+.linhanav {
+  margin-top: -3%;
+}
+
+  a{
+        font-size: large;
+        font-weight:400;
+        text-decoration: none;
+      }
+
+
+a:hover {
+  color: rgb(0, 160, 147);
+  transition: 0.5s;
+}
+
+.linkitens {
+  font-size: 27px;
+  text-decoration: none;
+        color: #00d3da;
+        margin-left: 4rem;
+}
+
+
+.navbar .megamenu{padding: 0;
+  margin: 0;
+
+}
+
+.megamenu {
+  background-image: linear-gradient(to top, rgb(225, 255, 252), rgb(255, 255, 255));
+  border: none;
+}
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar .has-megamenu{position:static!important;}
+  .navbar .megamenu{left:0; right:0; width:100%; height: 20rem; margin-top:0;  }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+    
+      max-height: 90vh;
+      margin-top:10px;
+  }
+}
+
+
+ .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 1;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #eeeef5;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #fff;
+}
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  color: #5a5af3;
+}
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #434175;
+  position: relative;
+  padding-bottom: 12px;
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #5a5af3;
+  font-size: 18px;
+  line-height: 1;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #5a5af3;
+}
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #b9b9fa;
+}
+#footer .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+#footer .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #5a5af3;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#footer .footer-newsletter form input[type=submit]:hover {
+  background: #7272f5;
+}
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #444444;
+}
+#footer .credits a {
+  transition: 0.3s;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #deddec;
+  color: #434175;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: #5a5af3;
+  color: #fff;
+  text-decoration: none;
+}
+
+
+
+
+
+
+  
+
+  
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="product.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="sectionprincipal">
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="font-family: 'Poppins';">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./assets/imagens/logo.png.png" alt="logo" width="70" height="60"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="main_nav">
+            <ul class="navbar-nav ms-auto ul">
+              <li class="nav-item active"> <a class="nav-link" href="./indexhome.html">Home </a> </li>
+              <li class="nav-item"><a class="nav-link" href="./indexsobre.html"> Sobre </a></li>
+              <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Faciais</a>
+                <div class="dropdown-menu megamenu ms-auto" role="menu">
+                  <div class="imagemfaciais"></div>
+                 
+                  <div class="container">
+                    <div class="row linhanav">
+                      <div class="col g-5 columstyle">
+                        <a class="linkitens" href="./drenagemfaciallinfatica.html">Drenagem facial linfática</a>
+                        <br>
+                        <a class="linkitens" href="./fiosdesustentacaopdo.html">Fios de sustentação (PDO)</a>
+                        <br>
+                        <a class="linkitens" href="./toxinabotulinica.html">Toxina botulínica</a>
+                        <br>
+                        <a class="linkitens" href="./tratamentodeacne.html">Tratamento de acne</a>
+                        <br>
+                        <a class="linkitens" href="./microagulhamento.html">Microagulhamento</a>
+                        <br>
+                        <a class="linkitens" href="./peelingdediamante.html">Peeling de diamante</a>
+                      </div>
+                      <div class="col g-5 columstyle">
+                        <a class="linkitens" href="./limpezadepele.html">Limpeza de pele</a>
+                        <br>
+                        <a class="linkitens" href="./manchas.html">Manchas</a>
+                        <br>
+                        <a class="linkitens" href="./peelingquimico.html">Peeling químico</a>
+                        <br>
+                        <a class="linkitens" href="./preenchimento.html">Preenchimento</a>
+                        <br>
+                        <a class="linkitens" href="./rejuvenecimentofacialeflacidez.html">Rejuvenecimento facial e flacidez</a>
+                        <br>
+                        <a class="linkitens" href="./skinbooster.html">Skinbooster</a>
+                      </div>
+                    </div>
+                  </div>
+                    
+                     
+                     
+                </div> <!-- dropdown-mega-menu.// -->
+              </li>
+              <li class="nav-item dropdown has-megamenu">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Corporais</a>
+                <div class="dropdown-menu megamenu ms-auto" role="menu">
+                  <div class="container">
+                    <div class="row linhanav">
+                      <div class="col g-5 columstyle">
+                        <a class="linkitens" href="./capilaralopecia.html">Capilar (Alopécia)</a>
+                        <br>
+                        <a class="linkitens" href="./carboxiterapiacorporalefacial.html">Carboxiterapia corporal e facial</a>
+                        <br>
+                        <a class="linkitens" href="./drenagemlinfaticacorporal.html">Drenagem linfática</a>
+                        <br>
+                        <a class="linkitens" href="./endermoterapia.html">Endermoterapia</a>
+                        <br>
+                        <a class="linkitens" href="./intradermoterapiacorporal.html">Intradermoterapia corporal</a>
+                        <br>
+                        <a class="linkitens" href="./lipodepapada.html">Lipo de papada</a>
+                        <br>
+                        <a class="linkitens" href="./secagemdevazinhos-peim.html">Secagem de vazinhos-PEIM</a>
+                      </div>
+                     
+                    </div>
+                  </div>
+                </div> <!-- dropdown-mega-menu.// -->
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./blog.html"> Blog </a></li>
+            </ul>
+           
+        </nav>  
+       
+  
+  
+          
+          <div class="container-fluid col-12 hed overlay containerheight">
+            <div class="row gx-2">
+              <div class="col-md-6 order-md-1 text">
+                <div class="col-md-12 order-md-2 containerinner">
+                  
+                  <h1 style="font-size: 50px;">Microagulhamento <b style="color: #00d3da;">EFETIVO</b>, desde o primeiro momento!</h1>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic obcaecati suscipit sit 
+                    maxime molestiae praesentium 
+                    fugiat nesciunt? Ad facere, asperiores quae itaque ab delectus nobis porro vel libero excepturi!</p>
+                    <div class="row2">
+                      <div class="col-12 itens" style="display: flex;">
+                        
+                        <div class="col-6 mestre">
+                          <p>
+                            <button class="btn btn-info">Clique aqui</button>
+                          </p>
+                        </div>
+                        <div class="col-6 mestre">
+                          <p>
+                            <img src="./assets/imagens/checkedd.png" alt="">
+                            <b>100% de aprovação</b>
+                          </p>
+                        </div>
+                    
+                      </div>
+                    </div>
+                    <div class="row2">
+                      <div class="col-12 itens">
+                        <div class="container cardgreens" style="background-color: #00d3da;">
+                          <div class="row row-cols-2 cardverde">
+                            <div class="col"><img style="width: 40%;" src="./assets/imagens/logo.png.png" alt=""></div>
+                            <div style="margin-top: 3%;" class="col">Lorem ipsum dolor sit, amet consectetur adipisicing elit. .</div>
+                            <hr><hr>
+                            <div class="col">Lorem*</div>
+                            <div class="col"><b>ALL INGREDIENTS</b></div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  
+              <div class="col-md-6 order-md-2 cols" style="height: 100vh;" id="imghed">
+                <img id="imgwomann" src="./assets/imagens/microagulhamentoo.png" alt="">
+              
+              </div>
+            </div>
+          </div>
+          
+        </section>
+
+        
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3><img src="./assets/imagens/logo.png.png" style="width: 40%; height: 40%;" alt=""></h3>
+          <p>
+            Av. Brigadeiro Faria Lima, 1478 <br>
+            Conjunto 201 - Pinheiros - SP CEP<br>
+            Brasil <br>
+            <strong>Phone:</strong> +55 11 91191-1026<br>
+            <strong>Email:</strong> contato@esteticainnovare.com.br<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Join Our Newsletter</h4>
+          <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+        
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+        
+    
+    <script>
+  
+      window.addEventListener('scroll', function(){
+  
+        let nav = document.querySelector('nav');
+        let windowPosition = window.scrollY > 0;
+        nav.classList.toggle('scrolling-active', windowPosition)
+  
+      })
+
+     
+  
+  
+    </script>
+
+
+  </body>
+</html>

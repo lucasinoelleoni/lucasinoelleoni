@@ -1,0 +1,1486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.83.1">
+  
+     <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    
+  
+    
+    <title>Innovare</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+     <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@900&display=swap');
+
+body {
+        font-family: 'Poppins';
+      }
+
+
+
+*{
+       
+       margin: 0;
+       padding: 0;
+     }
+
+
+     @media (max-width:576px){
+       .sec2{
+        overflow: hidden;
+       }
+     }
+     
+
+     
+    
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      a{
+        font-size: large;
+        font-weight:400;
+        text-decoration: none;
+      }
+
+.linkitens {
+  font-size: 27px;
+  text-decoration: none;
+        color: #00d3da;
+        margin-left: 4rem;
+}
+
+a:hover {
+  color: rgb(0, 160, 147);
+  transition: 0.5s;
+}  
+ 
+   
+  .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 1;
+}
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 50%;
+  padding: 1px;
+}
+
+.column2 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 1px;
+  
+}
+
+.column img {
+  margin-top: 1px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.hedi {
+  background-color: rgb(225, 255, 252);
+  height: 87vh;
+  
+}
+
+.sec2 {
+  height: 120vh;
+}
+
+@media (max-width: 576px) {
+
+.sec2 {
+  height: 200vh;
+  overflow: hidden;
+  
+}
+
+}
+
+
+.hed {
+  background-color: rgb(225, 255, 252);
+  height: 80vh;
+}
+
+@media (max-width: 576px){
+
+  .hed {
+    height: 150vh;
+  }
+
+}
+
+.agende {
+  background-color: white;
+  border-radius: 8px;
+  height: 140px;
+  margin-top: -4.5rem;
+  border: 1px solid rgb(230, 230, 230);
+  z-index: 1;
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .agende {
+    height: 300px;
+    margin-top: 0px;
+  }
+  
+}
+
+.down{
+  margin: auto;
+  margin-left: 1.8rem;
+}
+
+.imagem {
+  z-index: 1;
+  position: relative;
+  margin-top: 3rem;
+  margin-left: -3rem;
+}
+
+.imagem2 {
+  width: 130%;
+  z-index: 0;
+  position: relative;
+  margin-top: -32rem;
+  margin-left: -130px;
+  
+}
+
+@media (max-width: 576px) {
+  .imagem2 { 
+    width: 100%;
+    margin-bottom: -80px;
+    margin-left: 0.2rem;
+   
+  }
+}
+
+/*.imagem3 {
+  width: 45%;
+  z-index: 0;
+  position: absolute;
+  margin-top: -50px;
+  margin-left: 40rem;
+}
+
+@media (max-width: 576px) {
+  .imagem3 { 
+    width: 100%;
+    margin-bottom: -80px;
+    margin-left: 0.2rem;
+   
+  }
+} */
+
+
+
+@media (max-width: 576px) {
+  .imagem { 
+    margin-top: 20px;
+    margin-left: 0.3rem;
+   
+  }
+}
+
+@media (max-width: 576px) {
+
+.content {
+  margin-top: 15rem;
+}
+
+
+#container {
+  margin: auto;
+  padding: 10px;
+  text-align: justify;
+  
+  
+}
+
+@media (max-width: 576px) {
+
+#container {
+  margin-top: 5%;
+ 
+  
+}
+
+}
+
+.itens {
+  display: flex;
+}
+
+#dragrazie {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+
+  #dragrazie {
+    width: 100%;
+    margin: auto;
+    margin-top: -1rem;
+    
+  }
+
+}
+
+.icon {
+  width:15%;
+  height:15%;
+  margin-right: 1em;
+}
+
+
+
+}
+
+
+.containerboxes {
+  background-color: rgb(225, 255, 252);
+  height: 65vh;
+}
+
+
+.box2 {
+  width: 270px;
+  height: 270px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  background-position-x: 52%;
+  background-position-y: 45%;
+  margin: auto;
+  margin-top: 3.5rem;
+  border-radius: 50% 10% 50% 50%;
+  border: solid 10px rgb(224, 255, 251);
+  box-shadow: 0 3px 1rem rgba(0,0,0,.2) ;
+  
+  
+}
+
+@media (max-width: 576px) {
+.box2 {
+  margin-top: 20%;
+}
+} 
+
+@media (max-width: 576px) {
+  .cont {
+    margin-top: 10rem;
+    margin-right: 15rem;
+  }
+}
+
+@media (max-width: 576px) {
+.containerboxes {
+  height: 190vh;
+}
+}
+
+@media (max-width: 576px) {
+.imggra {
+  margin-left: -2rem;
+  overflow-x: hidden;
+}
+}
+
+.cont2 {
+  margin-top: 4%;
+}
+
+
+
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.cont {
+  margin-left: 18%;
+  position: relative;
+  width: 100%;
+  
+}
+
+/* Make the image to responsive */
+/*.image {
+  display: block;
+  width: 100%;
+  height: auto;
+} */
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 50%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.cont:hover .overlay {
+  opacity: 1;
+}
+
+#foto3 {
+  background-image: url(./assets/imagens/cardwoman.png);
+  background-position-x: 10px;
+}
+
+#foto2 {
+  background-image: url(./assets/imagens/cardwomanbody\(final\).png);
+  background-position-x: 10px;
+}
+
+#foto1 {
+  background-image: url(./assets/imagens/cardwoman.png);
+  background-position-x: 10px;
+}
+
+.mestre {
+  margin-top: 15px;
+  background-color: white; 
+ /* border: 1px solid rgb(230, 230, 230);*/
+  border-radius: 10px;
+  
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.boxx {
+  width: 150px;
+  height: 60px;
+  background-color: white;
+  position: absolute;
+  margin-top: -28rem;
+  margin-left: 1rem;
+  
+}
+
+@media (max-width: 576px) {
+.boxx {
+  margin-top: -80%;
+  margin-left: 10%;
+  overflow-x: hidden;
+}
+}
+
+.ul{
+        margin-right: 4rem;
+      }
+
+        
+  
+      /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    
+.promoprincipal {
+  background-image: url(./assets/imagens/forms.png);
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position-x: 300%;
+  background-position-y: 80%;
+}
+
+#imghed {
+  overflow-x: hidden;
+}
+      
+.wrapper{
+  height: 270px;
+  border: 1px solid #ddd;
+  display: flex;
+  overflow-x: auto;
+}
+
+.wrapper .item{
+  background-color: #ddd;
+  text-align: center;
+  line-height: 110px;
+  min-width: 20%;
+  margin-right: 2px;
+}
+
+.wrapper::-webkit-scrollbar{
+  width: 0;
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #eeeef5;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#footer .footer-top {
+  padding: 60px 0 30px 0;
+  background: #fff;
+}
+#footer .footer-top .footer-contact {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-contact h3 {
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  color: #5a5af3;
+}
+#footer .footer-top .footer-contact p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #777777;
+}
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #434175;
+  position: relative;
+  padding-bottom: 12px;
+}
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #5a5af3;
+  font-size: 18px;
+  line-height: 1;
+}
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+#footer .footer-top .footer-links ul a {
+  color: #777777;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #5a5af3;
+}
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+#footer .footer-newsletter h4 {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444444;
+  position: relative;
+  padding-bottom: 12px;
+}
+#footer .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 50px;
+  text-align: left;
+  border: 1px solid #5af3f3;
+}
+#footer .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+#footer .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #5af3f3;
+  color: #fff;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#footer .footer-newsletter form input[type=submit]:hover {
+  background: #7272f5;
+}
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #444444;
+}
+#footer .credits a {
+  transition: 0.3s;
+}
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #deddec;
+  color: #434175;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+#footer .social-links a:hover {
+  background: #5a5af3;
+  color: #fff;
+  text-decoration: none;
+}
+
+.btn-info{
+  background-color: #5af3f3;
+  border-radius: 50px;
+
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+*/
+.navbar {
+  padding: 0;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-size: 15px;
+  color: #434175;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #5af3f3;
+}
+.navbar .getstarted, .navbar .getstarted:focus {
+  padding: 6px 25px;
+  margin-left: 30px;
+  border-radius: 7px;
+  color:  #5af3f3;
+  border: 1px solid #5af3f3;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 14px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+  border-radius: 4px;
+}
+.navbar .dropdown ul li {
+  min-width: 200px; 
+}
+.navbar .dropdown ul a {
+  padding: 10px 20px;
+  font-size: 15px;
+  text-transform: none;
+}
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #5af3f3;
+}
+.navbar .dropdown:hover > ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+.navbar .dropdown .dropdown ul {
+  top: 0;
+  left: calc(100% - 30px);
+  visibility: hidden;
+}
+.navbar .dropdown .dropdown:hover > ul {
+  opacity: 1;
+  top: 0;
+  left: 100%;
+  visibility: visible;
+}
+@media (max-width: 1366px) {
+  .navbar .dropdown .dropdown ul {
+    left: -90%;
+  }
+  .navbar .dropdown .dropdown:hover > ul {
+    left: -100%;
+  }
+}
+
+/**
+* Mobile Navigation 
+*/
+.mobile-nav-toggle {
+  color: #434175;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+.mobile-nav-toggle.bi-x {
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(48, 47, 84, 0.9);
+  transition: 0.3s;
+}
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #434175;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #5a5af3;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  margin: 15px;
+}
+.navbar-mobile .dropdown ul {
+  position: static;
+  display: none;
+  margin: 10px 20px;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 1;
+  visibility: visible;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+}
+.navbar-mobile .dropdown ul li {
+  min-width: 200px;
+}
+.navbar-mobile .dropdown ul a {
+  padding: 10px 20px;
+}
+.navbar-mobile .dropdown ul a i {
+  font-size: 12px;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #5a5af3;
+}
+.navbar-mobile .dropdown > .dropdown-active {
+  display: block;
+}
+
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+  margin-top: 0%;
+  transition: all 0.5s;
+  z-index: 997;
+  padding: 20px 0;
+  background: #fff;
+}
+#header.header-scrolled, #header.header-inner-pages {
+  padding: 12px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+}
+#header .logo a {
+  color: #5a5af3;
+}
+#header .logo img {
+  max-height: 60px;
+}
+@media (max-width: 992px) {
+  #header {
+    padding: 12px 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Why Us
+--------------------------------------------------------------*/
+.why-us {
+  padding-top: 55px;
+  
+  
+}
+
+
+
+.why-us .box {
+  padding: 50px 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  border-radius: 30px 140px 140px 140px;
+  background-position: center;
+  
+}
+.why-us .box span {
+  display: block;
+  font-size: 28px;
+  font-weight: 700;
+  color: #b9b9fa;
+}
+.why-us .box h4 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #434175;
+}
+.why-us .box p {
+  color: #aaaaaa;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+.why-us .box:hover {
+  background:linear-gradient(to right, #5af3f3, #3ca5a5);;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 2px 2px 25px #3ca5a5;
+}
+.why-us .box:hover span, .why-us .box:hover h4, .why-us .box:hover p {
+  color: #fff;
+}
+
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 40px 30px;
+  box-shadow: 0px 0 20px rgba(1, 41, 112, 0.1);
+  background: #fff;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.3s;
+}
+.testimonials .testimonial-item .stars {
+  margin-bottom: 15px;
+}
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  margin: 0 auto;
+}
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+.testimonials .testimonial-item p {
+  font-style: italic;
+  margin: 0 auto 15px auto;
+}
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #4154f1;
+}
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #4154f1;
+}
+.testimonials .swiper-slide {
+  opacity: 0.3;
+}
+@media (max-width: 1199px) {
+  .testimonials .swiper-slide-active {
+    opacity: 1;
+  }
+  .testimonials .swiper-pagination {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .testimonials .swiper-slide-next {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Sections
+--------------------------------------------------------------*/
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+.section-header h2 {
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: 0;
+  color: #4154f1;
+  text-transform: uppercase;
+}
+.section-header p {
+  margin: 10px 0 0 0;
+  padding: 0;
+  font-size: 38px;
+  line-height: 42px;
+  font-weight: 700;
+  color: #012970;
+}
+@media (max-width: 768px) {
+  .section-header p {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+
+  
+    </style>
+
+
+
+
+<!-- ======= Header ======= -->
+<header id="header" class="fixed-top ">
+  <div class="container d-flex align-items-center justify-content-between">
+
+    <h1 class="logo"><a href="index.html"><img src="./assets/imagens/logo.png.png" alt=""></a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto active" href="./indexhome.html">Home</a></li>
+        <li><a class="nav-link scrollto" href="./indexsobre.html"> Sobre</a></li>
+        <li class="dropdown"><a href="#"><span>Faciais</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li class="dropdown"><a href="#"><span>Corporais</span> <i class="bi bi-chevron-down"></i></a>
+          <ul>
+            <li><a href="#">Drop Down 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+              <ul>
+                <li><a href="#">Deep Drop Down 1</a></li>
+                <li><a href="#">Deep Drop Down 2</a></li>
+                <li><a href="#">Deep Drop Down 3</a></li>
+                <li><a href="#">Deep Drop Down 4</a></li>
+                <li><a href="#">Deep Drop Down 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Drop Down 2</a></li>
+            <li><a href="#">Drop Down 3</a></li>
+            <li><a href="#">Drop Down 4</a></li>
+          </ul>
+        </li>
+        <li><a class="nav-link scrollto" href="#contact">Blog</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->
+
+
+  <div class="container-fluid col-12 hed">
+  <div class="container d-flex align-items-center justify-content-between">
+    
+    
+        
+        
+        
+        
+        
+        
+        
+   
+  
+  </div>  
+  <div class="row gx-2">
+    <div class="col-md-6 order-md-1 cols" style="height: 100vh;">
+      <div class="containercontent" style="margin-top: 25%; font-family: 'Poppins';">
+        <div class="content">
+          <h5 style="font-size: 1.7rem; color: #00d3da;">- SEJA A SUA MELHOR VERSÃO</h5>
+          <h1 style="font-size: 3.5rem;">COM <b style="color: #00d3da;">INNOVARE!</b></h1>
+          <p>Temos o objetivo de cuidar de nossos clientes sempre com responsabilidade e excelência na execução de nossos serviços.</p>
+        </div>
+      
+       
+
+
+      </div>
+    </div>
+    <div class="col-md-6 order-md-2 cols" style="height: 100vh;" id="imghed">
+      <img class="imagem" src="./assets/imagens/mulhercorrigida.png" alt="" style="width: 100%;">
+      <img class="imagem2" src="./assets/imagens/formasobelisco.png" alt="">
+    </div>
+  </div>
+</div>
+
+<section class="sec2">
+  <div class="container">
+    <div class="row g-1 agende">
+      <div class="col-md down">
+        <div class="form-floating">
+          
+          <select class="form-select" id="floatingSelectGrid" aria-label="Floating label select example" style="width: 10rem;">
+            <option selected>Qual opção encaixa com você?</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+          <label for="floatingSelectGrid">Procedimento</label>
+        </div>
+      </div>
+      <div class="col-md down">
+        <div class="form-floating">
+          <input style="width: 10rem;" type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="innovare@example.com">
+          <label for="floatingInputGrid">E-mail</label>
+
+        </div>
+      </div>
+      <div class="col-md down">
+        <div class="form-floating">
+          <input style="width: 10rem;" type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com" value="(  ) 0000-0000">
+          <label for="floatingInputGrid">Fone</label>
+
+        </div>
+      </div>
+      <div class="col-md down">
+        <div class="form-floating">
+          <input type="datetime-local" id="meeting-time"
+          name="meeting-time" value="2021-02-09T19:30"
+          min="2021-06-07T00:00" max="2023-06-14T00:00">
+        </div>
+      </div>
+      <div class="col-md down">
+        <button class="btn btn-info">AGENDAR</button>
+      </div>
+    </div>
+    </div>
+  </div>
+
+
+  <div class="container col-12 cont2" id="container">
+    <div class="row align-items-center gx-2;">
+      
+          <div class="col-md-6 order-md-2 text">
+            <div class="col-md-12 order-md-2">
+              
+              <h1>Por que <b style="color: #00d3da;">Innovare?</b></h1>
+              <p>O Espaço Innovare atua no mercado de estética desde 2019, com sede própria e oferece serviços de alta qualidade, com profissionais habilitados para tratamentos de estética corporal, facial e acupuntura.</p>
+                <div class="row2">
+                  <div class="col-12 itens" style="display: flex;">
+                    <img src="./assets/imagens/maocuraa.png" alt="" class="img-fluid icon" style="height: 15%; width: 15%;">
+                    <div class="mestre hover-shadow">
+                      <p>Nossa missão é proporcionar autoestima e evidenciar a beleza natural através da estética avançada, autocuidado e acupuntura. </p>
+                    </div>
+                
+                  </div>
+                </div>
+                <div class="row2">
+                  <div class="col-12 itens" style="display: flex;">
+                    <img src="./assets/imagens/maocuraa.png" alt="" class="img-fluid icon" style="height: 15%; width: 15%;">
+                    <div class="mestre hover-shadow">
+                      <p>QUALIDADE: Oferecermos serviços de qualidade, com preços justos e excelência nos atendimentos
+                      </p>
+                    </div>
+                    
+                  </div>
+                </div>
+                <div class="row2">
+                  <div class="col-12 itens" style="display: flex;">
+                    <img src="./assets/imagens/maocuraa.png" alt="" class="img-fluid icon" style="height: 15%; width: 15%;">
+                    <div class="mestre hover-shadow">
+                      <p>SEGURANÇA: Contamos com uma equipe altamente capacitada que preza a saúde em primeiro lugar, além de utilizarmos os melhores e mais conceituados produtos fornecidos por nomes de referência na área da estética.</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="col order-md-1">
+                <div class="col-12">
+                  <img src="./assets/imagens/frontwomanbeauty.png" alt="" class="img-fluid" id="dragrazie">
+                </div>
+            </div>
+          </div>
+        </div>
+
+</section>
+
+
+
+
+<div class="container-fluid col-12 containerboxes">
+  <!-- ======= Why Us Section ======= -->
+  <section id="why-us" class="why-us">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-4">
+          <div class="box b1">
+            <span>01</span>
+            <h4>Faciais</h4>
+            <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box b2">
+            <span>02</span>
+            <h4>Corporais</h4>
+            <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
+          </div>
+        </div>
+
+        <div class="col-lg-4 mt-4 mt-lg-0">
+          <div class="box b3">
+            <span>03</span>
+            <h4>Malar</h4>
+            <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Why Us Section -->
+</div>
+
+
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+
+  <div class="container" data-aos="fade-up">
+
+    <header class="section-header">
+      <h2>Testimonials</h2>
+      <p>What they are saying about us</p>
+    </header>
+
+    <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/imagens/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              <h3>Saul Goodman</h3>
+              <h4>Ceo &amp; Founder</h4>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/imagens/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <h3>Sara Wilsson</h3>
+              <h4>Designer</h4>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/imagens/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+              <h3>Jena Karlis</h3>
+              <h4>Store Owner</h4>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/imagens/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+              <h3>Matt Brandon</h3>
+              <h4>Freelancer</h4>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+        <div class="swiper-slide">
+          <div class="testimonial-item">
+            <div class="stars">
+              <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+            </div>
+            <p>
+              Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+            </p>
+            <div class="profile mt-auto">
+              <img src="assets/imagens/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+              <h3>John Larson</h3>
+              <h4>Entrepreneur</h4>
+            </div>
+          </div>
+        </div><!-- End testimonial item -->
+
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+  </div>
+
+</section><!-- End Testimonials Section -->
+
+
+<div class="container col-12 cont2" id="container">
+  <div class="row align-items-center gx-2;">
+
+    <div class="col order-md-2">
+      <div class="col-12 imggra">
+        <img src="./assets/imagens/p6.jpeg" alt="" class="img-fluid" style="width:87%; height: 87%; margin-left: 15%; margin-bottom: 3.2rem;" >
+        <div class="boxx hover-shadow">
+          <div style="margin-top: 10%; margin-left: 5%;">
+            <img src="./assets/imagens/botao-play.png" alt="">
+            <b>Promo video</b>
+          </div>
+       
+        </div>
+      </div>
+  </div>
+    
+        <div class="col-md-6 order-md-1 text">
+          <div class="col-md-12 order-md-2">
+            
+            <h1>Uma clínica que se preocupa com <b style="color: #00d3da;">você</b>, desde o primeiro momento!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At hic obcaecati suscipit sit 
+              maxime molestiae praesentium 
+              fugiat nesciunt? Ad facere, asperiores quae itaque ab delectus nobis porro vel libero excepturi!</p>
+              <div class="row2">
+                <div class="col-12 itens" style="display: flex;">
+                  
+                  <div class="col-6 mestre">
+                    <p>
+                      <img src="./assets/imagens/checkedd.png" alt="">
+                      <b>10/10 nível de satisfação</b>
+                    </p>
+                  </div>
+                  <div class="col-6 mestre">
+                    <p>
+                      <img src="./assets/imagens/checkedd.png" alt="">
+                      <b>100% de aprovação</b>
+                    </p>
+                  </div>
+              
+                </div>
+              </div>
+              <div class="row2">
+                <div class="col-12 itens" style="display: flex;">
+                  <button class="btn btn-info">Clique aqui</button>
+                  </div>
+                </div>
+              </div>
+              </div>
+            
+              </div>
+            </div>
+        </div>
+      </div>
+
+<!--
+      <div class="wrapper">
+        <div class="item">box-1</div>
+        <div class="item">box-2</div>
+        <div class="item">box-3</div>
+        <div class="item">box-4</div>
+        <div class="item">box-5</div>
+        <div class="item">box-6</div>
+        <div class="item">box-4</div>
+        <div class="item">box-5</div>
+        <div class="item">box-6</div>
+      </div>
+-->
+
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-6 footer-contact">
+          <h3><img src="./assets/imagens/logo.png.png" style="width: 40%; height: 40%;" alt=""></h3>
+          <p>
+            Av. Brigadeiro Faria Lima, 1478 <br>
+            Conjunto 201 - Pinheiros - SP CEP<br>
+            Brasil <br><br>
+            <strong>Phone:</strong> +55 11 91191-1026<br>
+            <strong>Email:</strong> contato@esteticainnovare.com.br<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
+            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+          <h4>Assine a nossa Newsletter</h4>
+          <p>Receba por E-mail os melhores conteúdos sobre beleza, saúde e estética.</p>
+          <form action="" method="post">
+            <input type="email" name="email"><input type="submit" value="Subscribe">
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Template Main JS File -->
+  <script src="/js/main.js"></script>
+      
+  
+  
+
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+          
+  </body>
+</html>
